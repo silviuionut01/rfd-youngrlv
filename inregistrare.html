@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Înregistrare - România fără dosar</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    .container { max-width: 500px; margin: 50px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #0077cc; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+      width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;
+    }
+    button {
+      margin-top: 20px; background-color: #0077cc; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;
+      width: 100%; font-size: 16px;
+    }
+    button:hover { background-color: #005fa3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Înregistrare</h2>
+    <form>
+      <label for="nume">Nume</label>
+      <input type="text" id="nume" name="nume" required>
+
+      <label for="prenume">Prenume</label>
+      <input type="text" id="prenume" name="prenume" required>
+
+      <label for="cnp">CNP</label>
+      <input type="text" id="cnp" name="cnp" required>
+
+      <label for="adresa">Adresă</label>
+      <input type="text" id="adresa" name="adresa" required>
+
+      <label for="telefon">Telefon</label>
+      <input type="tel" id="telefon" name="telefon" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="parola">Parolă</label>
+      <input type="password" id="parola" name="parola" required>
+
+      <button type="submit">Înregistrează-te</button>
+    </form>
+  </div>
+</body>
+</html>
