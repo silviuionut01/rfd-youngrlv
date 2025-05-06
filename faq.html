@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Întrebări frecvente - România fără dosar</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    header { background-color: #0077cc; color: white; padding: 20px 0; text-align: center; position: relative; }
+    header img:first-of-type { height: 135px; position: absolute; left: 20px; top: 20px; }
+    header img:last-of-type { height: 135px; position: absolute; right: 20px; top: 20px; }
+    nav { background: #005fa3; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; background: white; margin: 10px auto; max-width: 1000px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background: #0077cc; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    h2 { color: #0077cc; }
+    .faq-item { margin-bottom: 15px; }
+    .faq-question { font-weight: bold; cursor: pointer; }
+    .faq-answer { display: none; margin-top: 10px; padding-left: 15px; color: #555; }
+    .faq-answer.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/uKQdrMM.jpeg" alt="Logo România fără dosar">
+    <img src="https://i.imgur.com/K9s15kD.png" alt="Imagine dreapta" />
+    <h1>România fără dosar – Ediția 2025</h1>
+    <p>Transformăm administrația publică prin AI și digitalizare</p>
+  </header>
+
+  <nav>
+    <a href="#problema">Problema</a>
+    <a href="#solutia">Soluția</a>
+    <a href="#functionalitati">Funcționalități</a>
+    <a href="#etape">Etape</a>
+    <a href="cereri.html">Cereri</a>
+    <a href="#faq">FAQ</a>
+    <a href="feedback.html">Feedback</a> <!-- Linkul Feedback -->
+  </nav>
+
+  <section>
+    <h2>Întrebări frecvente (FAQ)</h2>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(0)">Ce este România fără dosar?</div>
+      <div class="faq-answer" id="faq-answer-0">
+        <p>România fără dosar este o platformă digitală care automatizează procesele administrative din instituțiile publice, reducând dependența de hârtie și economisind timp pentru cetățeni și instituții.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(1)">Cum mă pot autentifica pe platformă?</div>
+      <div class="faq-answer" id="faq-answer-1">
+        <p>Pentru autentificare, vei folosi o identitate digitală unică și o semnătură electronică. Procesul este simplu și securizat pentru a proteja datele tale.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(2)">Ce documente pot depune online?</div>
+      <div class="faq-answer" id="faq-answer-2">
+        <p>Poți depune orice documente administrative care sunt legate de cererile sau procedurile guvernamentale, inclusiv formulare de cerere, acte de identitate și altele.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(3)">Este platforma disponibilă în toată România?</div>
+      <div class="faq-answer" id="faq-answer-3">
+        <p>Da, platforma va fi disponibilă pentru toți cetățenii din România, indiferent de locația lor, și va fi accesibilă prin internet, pe orice dispozitiv.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 România fără dosar – Proiect studențesc. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script>
+    function toggleAnswer(index) {
+      const answer = document.getElementById(`faq-answer-${index}`);
+      answer.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

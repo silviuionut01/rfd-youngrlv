@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerere Certificat de Naștere</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    header { background-color: #0077cc; color: white; padding: 20px 0; text-align: center; }
+    footer { background-color: #0077cc; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    form { background: white; margin: 20px auto; padding: 20px; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    label { display: block; margin: 10px 0 5px; }
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"], input[type="file"] {
+      width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc;
+    }
+    button { background-color: #0077cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #005fa3; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cerere pentru Certificat de Naștere</h1>
+  </header>
+
+  <form>
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume" required>
+
+    <label for="prenume">Prenume:</label>
+    <input type="text" id="prenume" name="prenume" required>
+
+    <label for="cnp">CNP:</label>
+    <input type="number" id="cnp" name="cnp" required>
+
+    <label for="data_nasterii">Data nașterii:</label>
+    <input type="date" id="data_nasterii" name="data_nasterii" required>
+
+    <label for="adresa">Adresă:</label>
+    <input type="text" id="adresa" name="adresa" required>
+
+    <label for="telefon">Număr de telefon:</label>
+    <input type="text" id="telefon" name="telefon" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="document">Document suplimentar (opțional):</label>
+    <input type="file" id="document" name="document">
+
+    <button type="submit">Trimite cererea</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 România fără dosar – Proiect studențesc. Toate drepturile rezervate.</p>
+  </footer>
+</body>
+</html>

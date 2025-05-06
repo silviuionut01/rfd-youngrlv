@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerere pentru Schimbare Domiciliu</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { color: #0077cc; }
+    label { display: block; margin: 10px 0 5px; }
+    input, textarea, select { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #0077cc; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+    button:hover { background-color: #005fa3; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Cerere pentru Schimbare Domiciliu</h2>
+    <form action="/submit_schimbare_domiciliu" method="POST">
+      <label for="nume">Nume complet solicitant</label>
+      <input type="text" id="nume" name="nume" required>
+
+      <label for="cnp">CNP solicitant</label>
+      <input type="text" id="cnp" name="cnp" required>
+
+      <label for="adresa_veche">Adresă veche</label>
+      <input type="text" id="adresa_veche" name="adresa_veche" required>
+
+      <label for="adresa_noua">Adresă nouă</label>
+      <input type="text" id="adresa_noua" name="adresa_noua" required>
+
+      <label for="email">Adresă de email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="email">Număr telefon</label>
+      <input type="email" id="numar_telefon" name="numar_telefon" required>
+
+      <label for="email">Motivul schimbării</label>
+      <input type="email" id="motivul_schimbarii" name="motivul_schimbarii" required>
+
+      <button type="submit">Trimite cererea</button>
+    </form>
+  </div>
+
+</body>
+</html>

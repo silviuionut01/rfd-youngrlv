@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -6,57 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>România fără dosar - 2025</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-    header { background-color: #0077cc; color: white; padding: 20px 0; text-align: center; position: relative; }
-    header img:first-of-type { height: 135px; position: absolute; left: 20px; top: 20px; }
-    header img:last-of-type { height: 135px; position: absolute; right: 20px; top: 20px; }
-    nav { background: #005fa3; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 20px; background: white; margin: 10px auto; max-width: 1000px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer { background: #0077cc; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-    h2 { color: #0077cc; }
-    .cereri { list-style-type: none; padding: 0; }
-    .cereri li { margin: 10px 0; }
-    .cereri a { color: #0077cc; font-weight: bold; text-decoration: none; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background-color: #f4f4f4; 
+      color: #333; 
+      display: flex; 
+      flex-direction: column;
+      height: 100vh;
+    }
+    header { 
+      background-color: #0077cc; 
+      color: white; 
+      padding: 20px 0; 
+      text-align: center; 
+      position: relative; 
+    }
+    header img:first-of-type { 
+      height: 135px; 
+      position: absolute; 
+      left: 20px; 
+      top: 20px; 
+    }
+    header img:last-of-type { 
+      height: 135px; 
+      position: absolute; 
+      right: 20px; 
+      top: 20px; 
+    }
+    nav { 
+      background: #005fa3; 
+      padding: 10px; 
+      text-align: center; 
+    }
+    nav a { 
+      color: white; 
+      margin: 0 15px; 
+      text-decoration: none; 
+      font-weight: bold; 
+    }
+    section { 
+      padding: 20px; 
+      background: white; 
+      margin: 10px auto; 
+      max-width: 1000px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+      flex-grow: 1; 
+    }
+    footer { 
+      background: #0077cc; 
+      color: white; 
+      text-align: center; 
+      padding: 15px; 
+      margin-top: 20px; 
+      position: static; 
+      bottom: 0; 
+      width: 100%;
+    }
+    h2 { 
+      color: #0077cc; 
+    }
+
+    .logo-concurs {
+      display: block;
+      margin: 20px auto;
+      max-width: 250px;
+      height: auto;
+    }
+
+    
+    .auth-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .auth-buttons a {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #005fa3;
+    }
+
+    
+    #functionalitati {
+      max-width: 1000px; /* Lățimea maximă pentru a se potrivi cu restul paginii */
+      margin: 20px auto; /* Centrarea secțiunii */
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="https://i.imgur.com/uKQdrMM.jpeg" alt="Logo România fără dosar">
-    <img src="https://i.imgur.com/K9s15kD.png" alt="Imagine dreapta" />
     <h1>România fără dosar – Ediția 2025</h1>
-    <p>Transformăm administrația publică prin AI și digitalizare</p>
   </header>
+
   <nav>
-    <a href="#problema">Problema</a>
-    <a href="#solutia">Soluția</a>
-    <a href="#functionalitati">Funcționalități</a>
-    <a href="#etape">Etape</a>
-    <a href="#cereri">Cereri</a>
-    <a href="#echipa">Echipa</a>
+    <a href="index.html">Acasă</a>
+    <a href="parteneriate.html">Parteneriate</a>
+    <a href="contact.html">Contact</a>
+    <a href="cereri.html">Cereri</a>
+    <a href="faq.html">FAQ</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="despre.html">Despre proiect</a>
+    <a href="inregistrare.html">Înregistrare</a> <!-- Link către pagina de înregistrare -->
+    <a href="autentificare.html">Autentificare</a> <!-- Link către pagina de autentificare -->
   </nav>
+
+  <!-- Mesajele de înregistrare și autentificare mutat sub bara de navigare -->
+  <div class="auth-buttons">
+    <p>Nu ai cont? <a href="inregistrare.html">Înregistrează-te acum</a></p>
+    <p>Ai deja cont? <a href="autentificare.html">Autentifică-te</a></p>
+  </div>
 
   <section id="problema">
     <h2>Problema</h2>
-    <p>Administrația publică din România este încă dependentă de hârtie, cozi și verificări manuale. Cetățenii pierd timp și bani în procese ineficiente, iar instituțiile publice suferă din cauza personalului neproductiv.</p>
-  </section>
-
-  <section id="solutia">
-    <h2>Soluția noastră</h2>
-    <p>O platformă digitală națională care automatizează procesele administrative cu ajutorul inteligenței artificiale. Cererile se depun online, datele sunt completate automat, iar documentele sunt aprobate digital, fără hârtie și fără drumuri inutile.</p>
-  </section>
-
-  <section id="cereri">
-    <h2>Cereri administrative</h2>
-    <p>Accesează formularele pentru diverse cereri administrative:</p>
-    <ul class="cereri">
-      <li><a href="cerere_certificat_nastere.html">Cerere certificat de naștere</a></li>
-      <li><a href="cerere_act_identitate.html">Cerere act de identitate</a></li>
-      <li><a href="cerere_schimbare_domiciliu.html">Cerere schimbare domiciliu</a></li>
-      <li><a href="cerere_autorizatie_constructie.html">Cerere autorizație de construcție</a></li>
-      <li><a href="cerere_declaratie_impozit.html">Declarație impozit</a></li>
+    <p>
+      Echipa <strong>Young Revolution</strong> a ales să se concentreze asupra uneia dintre cele mai complexe și provocatoare zone ale Bucureștiului – <strong>cartierul Gara de Nord</strong>. Cu un potențial strategic enorm, dar afectat de multiple disfuncționalități, acest cartier reprezintă o radiografie a problemelor întâlnite frecvent în zonele centrale ale marilor orașe din România.
+    </p>
+    
+    <h3> Probleme identificate</h3>
+    
+    <ul>
+      <li><strong>Infrastructură degradată:</strong> Trotuare sparte, clădiri neîngrijite și spații verzi abandonate. Cartierul suferă de o lipsă de investiții vizibile în ultimii ani, ceea ce îl face mai puțin atractiv pentru locuitori și turiști. <br><em>Soluție propusă:</em> reabilitarea completă a infrastructurii pietonale, fațadizări, reconfigurarea peisajului urban prin fonduri europene și investiții locale.</li>
+      
+      <li><strong>Siguranță publică precară:</strong> Zona este percepută ca fiind periculoasă, mai ales seara, din cauza prezenței persoanelor fără adăpost, cerșetoriei și vandalismului ocazional. <br><em>Soluție propusă:</em> implementarea unui sistem de supraveghere inteligent, creșterea vizibilității Poliției Locale și colaborarea cu ONG-uri pentru reintegrarea persoanelor vulnerabile.</li>
+      
+      <li><strong>Poluare ridicată și trafic sufocant:</strong> Intersecțiile aglomerate și transportul feroviar generează un nivel ridicat de noxe și zgomot, afectând calitatea vieții. <br><em>Soluție propusă:</em> dezvoltarea de benzi dedicate transportului public, creșterea spațiilor verzi și crearea unor bariere vegetale de protecție fonică și ecologică.</li>
+      
+      <li><strong>Imagine urbană haotică:</strong> Prezența comerțului informal, panouri publicitare excesive și o lipsă de coerență estetică afectează imaginea generală a cartierului. <br><em>Soluție propusă:</em> reglementarea clară a spațiului public, modernizarea zonei comerciale și încurajarea businessurilor locale curate și organizate.</li>
+      
+      <li><strong>Lipsa de facilități moderne pentru cetățeni:</strong> Cartierul nu oferă suficiente spații comunitare, digitale sau de relaxare. Este necesară o abordare modernă și digitală a relației cetățean-administrație. <br><em>Soluție propusă:</em> dezvoltarea unui <strong>portal digital de cartier</strong>, prin care locuitorii să acceseze servicii, să semnaleze probleme și să se implice activ în viața urbană.</li>
     </ul>
-  </section>
+    
+    <p>
+      Această analiză a fundamentat viziunea noastră pentru un <strong>portal inteligent de cartier</strong>, parte a inițiativei „România fără Dosar” – un instrument digital menit să aducă administrația locală mai aproape de oameni, să răspundă rapid problemelor semnalate și să faciliteze modernizarea cartierelor urbane.
+    </p>
+</section>
+
+  <<section id="solutia">
+    <h2>Soluția noastră</h2>
+    <p>
+      Echipa Young Revolution propune o soluție inovativă bazată pe tehnologia digitală pentru a răspunde provocărilor cartierului Gara de Nord. Pornind de la o analiză detaliată a problemelor cartierului, am elaborat un <strong>portal digital de cartier</strong>, care va transforma interacțiunea dintre cetățeni și administrația locală, oferind soluții rapide și eficiente pentru îmbunătățirea vieții urbane.
+    </p>
+
+    <h3> Caracteristici cheie ale soluției:</h3>
+    
+    <ul>
+        <li><strong>Reabilitare digitală a infrastructurii:</strong> Platforma va facilita gestionarea problemelor de infrastructură prin raportări online, alerte și urmărirea progresului reparațiilor în timp real. Cetățenii vor putea semnala străzi deteriorate, trotuare sparte sau clădiri neîngrijite direct pe portal. <br><em>Soluție tehnologică:</em> aplicație de raportare directă, integrată cu sistemul de monitorizare al autorităților locale.</li>
+        
+        <li><strong>Îmbunătățirea siguranței publice:</strong> Utilizarea tehnologiei pentru a îmbunătăți siguranța în cartier. Cetățenii vor avea acces la hărți de siguranță în timp real și vor putea semnala incidente sau infracțiuni direct prin platformă, într-un mod rapid și anonim. <br><em>Soluție tehnologică:</em> integrarea unui sistem de alertă instantaneu și partajarea datelor cu Poliția Locală.</li>
+        
+        <li><strong>Reducerea poluării și traficului:</strong> Platforma va oferi informații în timp real despre nivelurile de trafic și poluare, recomandând rute alternative sau programarea transportului public în funcție de fluxurile de călători. De asemenea, va încuraja locuitorii să utilizeze transportul public sau să aplice soluții de mobilitate urbană mai sustenabile. <br><em>Soluție tehnologică:</em> integrarea cu sistemele de monitorizare a traficului și transportului public.</li>
+        
+        <li><strong>Regenerarea zonei comerciale:</strong> Prin intermediul portalului, antreprenorii locali vor putea să-și promoveze afacerea într-un mod organizat și legal. De asemenea, va exista un sistem de feedback de la locuitori pentru a îmbunătăți serviciile și pentru a construi o zonă comercială sustenabilă. <br><em>Soluție tehnologică:</em> platformă digitală pentru înregistrarea și promovarea afacerilor, plus un sistem de evaluare a acestora.</li>
+        
+        <li><strong>Servicii online accesibile:</strong> Cetățenii vor avea posibilitatea de a accesa servicii administrative online, precum plata taxelor sau înregistrarea cererilor pentru diverse servicii publice. Acest lucru va reduce cozile și timpul de așteptare la ghișee, iar cetățenii vor putea interacționa cu administrația locală într-un mod mult mai eficient. <br><em>Soluție tehnologică:</em> portal digital integrat cu serviciile de administrație publică locală.</li>
+    </ul>
+
+    <p>
+      Aceste soluții vor adresa în mod direct problemele acute din cartierul Gara de Nord, oferind cetățenilor un instrument puternic de comunicare și intervenție rapidă. Viziunea noastră este de a crea un cartier inteligent, conectat și modern, în care tehnologia să aducă îmbunătățiri semnificative pentru toți locuitorii.
+    </p>
+
+  
+ <section id="functionalitati">
+  <h2>Funcționalități cheie</h2>
+  <div style="max-width: 100%; margin: 0 auto;">
+    <ul>
+      <li>Identitate digitală unică și semnătură electronică</li>
+      <li>Platformă centralizată conectată la bazele de date ale instituțiilor</li>
+      <li>AI care generează, validează și aprobă cereri automat</li>
+      <li>Asistent virtual inteligent pentru cetățeni</li>
+      <li>Detectare automată a fraudelor și protecție avansată a datelor</li>
+      <li>Autentificare în doi pași pentru siguranță</li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Logo-ul concursului adăugat în partea de jos -->
+  <img src="https://i.imgur.com/xGXEpjd.png" alt="Logo Concurs" class="logo-concurs">
 
   <footer>
     <p>&copy; 2025 România fără dosar – Proiect studențesc. Toate drepturile rezervate.</p>
